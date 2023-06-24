@@ -12,13 +12,13 @@ public class Addition {
     Calculator calculator;
 
     @PostMapping("/addition")
-    public ResponseEntity<Result> addNumbers(@RequestBody TwoNumbers twoNumbers) {
+    public ResponseEntity<Result> addNumbers(@RequestBody Numbers twoNumbers) {
         long result = calculator.add(twoNumbers.getNum1(), twoNumbers.getNum2());
         Result result1 = new Result(twoNumbers.getNum1(), twoNumbers.getNum2(), result);
         return ResponseEntity.ok(result1);
     }
 
-    
+
     public static class Result {
         private long num1;
         private long num2;

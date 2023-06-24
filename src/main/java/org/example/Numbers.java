@@ -1,6 +1,6 @@
 package org.example;
 
-public class TwoNumbers {
+public class Numbers {
 
     private long num1;
     private long num2;
