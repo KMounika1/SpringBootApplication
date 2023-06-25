@@ -1,5 +1,7 @@
+import org.example.Addition;
 import org.example.Calculator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.assertEquals;
@@ -7,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TestCase {
 
-    @Autowired
-    Calculator calculator;
+    Calculator calculator = new Calculator();
 
     @Test
     public void AddTwoNumbers()
